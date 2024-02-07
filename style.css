@@ -1,0 +1,381 @@
+/* start-style:: CSS Initialization Reset */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth; /* Does NOT work on Safari */
+}
+
+/*
+**  Set default inherited properties in body element
+*/
+body {
+	background-color: #fff;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 500;
+	color: #111;
+	font-family: sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-size: 24px;
+	line-height: 36px;
+	font-weight: 700;
+}
+
+p {
+	margin-bottom: 16px;
+}
+
+/*
+** start  ul, ol elements
+*/
+ul,
+ol {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+/*
+**  start set Anchor elements that don't have a class get default styles
+*/
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+/*
+** start Inherit fonts for inputs and buttons
+*/
+input,
+button,
+textarea,
+select {
+	font: inherit;
+	color: inherit;
+	border: none;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+button {
+	background-color: transparent;
+	box-shadow: none;
+	cursor: pointer;
+}
+/* end-style:: CSS Initialization Reset */
+
+/* start-style:: Layout Utility Classes */
+.row {
+	margin: 30px -8px 0;
+	overflow-x: hidden;
+}
+
+.w-25 {
+	width: 25%;
+	float: left;
+}
+
+.w-33 {
+	width: 33.333333%;
+	float: left;
+}
+.w-50 {
+	width: 50%;
+	float: left;
+}
+
+.w-75 {
+	width: 75%;
+	float: left;
+}
+.w-100 {
+	width: 100%;
+}
+
+.clear-fix {
+	clear: both;
+}
+/* end-style:: Layout Utility Classes */
+
+/* start-style:: Page LAyout  */
+aside {
+	padding: 8px 16px;
+	width: 268px;
+	background-color: #f44336;
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+}
+
+.main-content {
+	width: calc(100% - 300px);
+	float: right;
+	background-color: #fff;
+}
+/* end-style:: Page LAyout */
+
+/* start-style:: Aside  */
+.aside-heading {
+	color: #fff;
+	margin: 84px 0 64px;
+	padding: 10px 16px;
+	font-size: 24px;
+	line-height: 36px;
+	font-weight: 700;
+	text-transform: capitalize;
+}
+
+.nav-list__link {
+	display: block;
+	padding: 8px 16px;
+	line-height: 27px;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: capitalize;
+}
+
+.nav-list__link:link,
+.nav-list__link:visited {
+	color: #fff;
+}
+
+.nav-list__link:hover,
+.nav-list__link:active {
+	color: #111;
+	background-color: #fff;
+}
+/* end-style:: Aside  */
+
+/* start-style:: Main Header  */
+.main-header {
+	margin-top: 110px;
+	margin-bottom: 30px;
+}
+
+.main-header__title {
+	padding: 10px 0;
+	font-size: 64px;
+	font-weight: 600;
+	text-transform: capitalize;
+}
+/* end-style:: Main Header  */
+
+/* start-style:: section classes */
+.sec {
+	margin-bottom: 75px;
+}
+
+.container {
+	margin: 0 40px;
+	padding: 0 16px;
+}
+/* end-style:: CSS Initialization Reset */
+
+/* start-style:: primary Heading component*/
+.primary-heading {
+	font-size: 48px;
+	font-weight: 600;
+	line-height: 72px;
+	color: #f44336;
+	text-transform: capitalize;
+}
+.primary-heading__ruler {
+	display: block;
+	width: 50px;
+	padding: 0.1px;
+	margin: 20px 0;
+
+	border-radius: 4px;
+	border: 5px solid red;
+}
+/* end-style:: primary Heading component*/
+
+/* start-style:: Room  component */
+.room-card {
+	margin: 4px 8px;
+}
+
+.room-card__image {
+	display: block;
+	width: 100%;
+	opacity: 0.8;
+}
+
+.room-card__image:hover {
+	opacity: 1;
+}
+/* end-style::  Room component */
+
+/* start-style::  Designer component */
+.member-card {
+	margin: 0 8px;
+	background-color: rgb(241, 241, 241);
+}
+
+.member-card__image {
+	display: block;
+	width: 100%;
+	opacity: 0.85;
+}
+
+.member-card__text {
+	padding: 0 16px;
+}
+
+.member-card__name {
+	font-size: 24px;
+	text-transform: capitalize;
+	font-weight: 400;
+	margin-top: 16px;
+}
+
+.member-card__position {
+	margin: 10px 0;
+	color: #606060;
+}
+
+.member-card__description {
+	margin: 0;
+	padding-bottom: 16px;
+}
+/* end-style::  Designer component */
+
+/* start-style::  Package component */
+.package-card {
+	margin: 0 8px;
+	background-color: rgb(241, 241, 241);
+	text-align: center;
+}
+
+.package-card__header {
+	background-color: rgb(97, 97, 97);
+	padding: 32px 16px;
+}
+
+.package-card--pro .package-card__header {
+	background-color: #f44336;
+}
+
+.package-card__title {
+	font-size: 24px;
+	color: #fff;
+	text-transform: capitalize;
+}
+
+.package-card__features-list {
+}
+
+.package-card__item {
+	padding: 8px 16px;
+	border-bottom: 1px solid #ddd;
+}
+
+.package-card__price {
+	font-size: 30px;
+}
+
+.package-card__per-price {
+	font-size: 16px;
+	display: block;
+	opacity: 0.6;
+	margin-top: 10px;
+}
+
+.package-card__footer {
+	padding: 24px 16px;
+}
+
+.package-card__btn {
+	color: #111;
+	background-color: #fff;
+}
+
+.package-card--pro .package-card__btn {
+	color: #fff;
+	background-color: #f44336;
+}
+
+.package-card__btn:hover {
+	color: #fff;
+	background-color: #111;
+}
+/* end-style::  Package component */
+
+/* start-style::  contact Form  */
+.form-control {
+	margin: 16px 0;
+}
+
+.form-control__label,
+.form-control__input,
+.btn-submit {
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+}
+
+.form-control__label {
+	text-transform: capitalize;
+}
+
+.form-control__input {
+	padding: 10px;
+	border: 1px solid #ccc;
+}
+
+.btn-submit {
+	margin-top: 25px;
+	background-color: #f44336;
+	color: #fff;
+}
+.btn-submit:hover {
+	color: #000;
+	background-color: #ccc;
+}
+/* end-style::  contact Form */
+
+/* end-style::  Button Component */
+.btn {
+	font-size: inherit;
+	padding: 12px 24px;
+	text-transform: capitalize;
+	border: none;
+	cursor: pointer;
+}
+
+.btn--light {
+	color: #111;
+	background-color: #fff;
+}
+.btn--primary {
+	color: #fff;
+	background-color: #f44336;
+}
+/* end-style:: Button Component */
+
+/* start-style::  Footer  */
+.main-footer {
+	background-color: rgba(241, 241, 241);
+	margin-top: 75px;
+	padding: 32px 58px;
+}
+.main-footer__text {
+	text-align: right;
+}
+.main-footer__link:link,
+.main-footer__link:visited {
+	text-decoration: underline;
+}
+.main-footer__link:hover,
+.main-footer__link:active {
+	opacity: 0.6;
+}
+/* end-style::  Footer  */
